@@ -161,6 +161,7 @@ select {
 .redes-sociais {
   display: flex;
   gap: 20px;
+  justify-content: center;
 }
 
 .redes-sociais img {
@@ -172,6 +173,7 @@ select {
   font-size: 2rem;
   text-align: center;
   margin-top: 50px;
+  width: 40%;
 }
 
 .redes-titulo h6 {
@@ -197,6 +199,11 @@ select {
 
 .formulario {
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+  padding-bottom: 20px;
 }
 
 .formulario input {
@@ -216,9 +223,7 @@ select {
 
 .formulario-redes {
   color: #fff;
-  padding: 70px 300px 30px 200px;
   display: flex;
-  gap: 350px;
 }
 
 .formulario p {
@@ -254,6 +259,91 @@ select {
 
 .nome-email {
   display: flex;
-  gap: 50px;
-  padding: 10px 0px;
+  gap: 5px;
+}
+
+.input-name {
+  width: 167px;
+}
+
+.input-email {
+  width: 167px;
+}
+
+@media (max-width: 1221px) {
+  #portifolio img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 930px) {
+  #portifolio img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 730px) {
+  .sites img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .portifolio-imgs {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  #portifolio img {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .formulario-redes {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .formulario {
+    width: 100%;
+  }
+
+  .redes-titulo {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sobre h2 {
+    margin-bottom: 30px;
+  }
+
+  .texto {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .sites {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-sites {
+    width: 100%;
+  }
+
+  .sites img {
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+
+  .sobre {
+    width: 100%;
+  }
 }
