@@ -38,6 +38,7 @@ a {
   text-align: center;
   margin-top: 200px;
   font-size: 7rem;
+  -webkit-text-stroke: 2px #000;
 }
 
 .orcamento {
@@ -263,11 +264,11 @@ select {
 }
 
 .input-name {
-  width: 167px;
+  width: 152px;
 }
 
 .input-email {
-  width: 167px;
+  width: 152px;
 }
 
 @media (max-width: 1221px) {
@@ -345,5 +346,33 @@ select {
 
   .sobre {
     width: 100%;
+  }
+}
+
+@media (max-width:415px) {
+  .topo-pagina a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .nome-email {
+    flex-direction: column;
+  }
+  .input-email {
+    width: 330px;
+  }
+  .input-name {
+    width: 330px;
+  }
+  .titulo {
+    font-size: 6rem;
+    -webkit-text-stroke: 2px #000;
+  }
+  .formulario button {
+    margin-left: 150px;
+  }
+  .topo-pagina a {
+    font-size: 1.5rem;
   }
 }
